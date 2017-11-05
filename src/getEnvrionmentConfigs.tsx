@@ -1,4 +1,7 @@
 import axios from 'axios';
+const parseDomain = require("parse-domain");
+
+console.log("subdomain", parseDomain(window.location.origin));
 
 const getConfigsPromise = new Promise((resolve, reject) => {
     axios.get(`/environment.json`)
