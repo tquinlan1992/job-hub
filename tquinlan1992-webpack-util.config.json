@@ -1,0 +1,12 @@
+{
+    "entry": "/src/app.tsx",
+    "appOutputFilename": "app.js",
+    "appOutputPath": "/build",
+    "htmlTitle": "Webpack-React",
+    "publicDirSrc": "/src/public/**/*",
+    "publicDirOut": "/",
+    "tsconfig": "/tsconfig.json",
+    "urlBase": "http://localhost",
+    "port": 8080,
+    "allowedHosts": [".localhost"]
+}

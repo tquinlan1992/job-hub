@@ -1,0 +1,20 @@
+version: '3.2'
+
+services:
+  client:
+    image: tquinlan1992/webpack-react
+    container_name: webpack-react
+    build:
+        context: ../
+    volumes:
+       - type: bind
+         source: ../src
+         target: /client-app/src
+       - type: bind
+         source: ../tquinlan1992-webpack-util.config.json
+         target: /client-app/tquinlan1992-webpack-util.config.json
+    ports:
+      - "8080:8080"
+
+volumes:
+  data: {}
